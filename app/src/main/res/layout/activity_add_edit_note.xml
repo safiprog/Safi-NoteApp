@@ -4,6 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
     tools:context=".AddEditNoteActivity">
 
+    <EditText
+        android:id="@+id/noteTileEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:layout_margin="10dp"
+        android:hint="Enter Note Title "
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/noteDesEdit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/noteTileEdit"
+        app:layout_constraintBottom_toTopOf="@id/noteAddBtn"
+        android:gravity="start|top"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:hint="Enter Note Description "
+        android:textColorHint="@color/white"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/noteAddBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/custom_botton"
+
+        android:text="Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

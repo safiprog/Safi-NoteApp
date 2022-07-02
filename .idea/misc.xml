@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Safi Hamza/AndroidStudioProjects/SafiNotes/app/src/main/res/layout/activity_add_edit_note.xml" value="0.10989583333333333" />
-        <entry key="..\:/Users/Safi Hamza/AndroidStudioProjects/SafiNotes/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Safi Hamza/AndroidStudioProjects/SafiNotes/app/src/main/res/drawable/custom_botton.xml" value="0.151" />
+        <entry key="..\:/Users/Safi Hamza/AndroidStudioProjects/SafiNotes/app/src/main/res/layout/activity_add_edit_note.xml" value="0.21" />
+        <entry key="..\:/Users/Safi Hamza/AndroidStudioProjects/SafiNotes/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Safi Hamza/AndroidStudioProjects/SafiNotes/app/src/main/res/layout/item_view.xml" value="0.33" />
       </map>
     </option>

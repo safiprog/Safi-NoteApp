@@ -3,6 +3,8 @@ package com.example.safinotes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity(), NoteClickInterface, NoteClickDelete {
         setContentView(R.layout.activity_main)
         myRecycler=findViewById(R.id.myRecycler)
         floatingBtn=findViewById(R.id.floatBtn)
+
 //    recyclerView Impementation
         myRecycler.layoutManager=LinearLayoutManager(this)
         val NoteAdaptor=NAdaptor(this,this,this)
@@ -33,9 +36,11 @@ class MainActivity : AppCompatActivity(), NoteClickInterface, NoteClickDelete {
             }
         })
         floatingBtn.setOnClickListener{
+
             val intent=Intent(this@MainActivity,AddEditNoteActivity::class.java)
             startActivity(intent)
             this.finish()
+
         }
     }
 //    interface implemantation for adaptor
@@ -55,4 +60,6 @@ class MainActivity : AppCompatActivity(), NoteClickInterface, NoteClickDelete {
         startActivity(intent)
         this.finish()
     }
+
+
 }
